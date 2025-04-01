@@ -1,0 +1,146 @@
+/* About */
+:root {
+    --common-red: #f44336;
+    --text-color: #777;
+    --section-dark: #30475E;
+    --section-light: #fafafa;
+    --text-color-light: #e3e3e3;
+}
+
+p {
+    font-size: 16px;
+    line-height: 2;
+}
+
+html {
+    background-color: var(--section-light);
+}
+
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1 {
+    margin-top: 85px;
+}
+
+@media(max-width: 1024px) {
+    .sub-header h1 {
+        margin-top: 100px;
+    }
+}
+
+/* About-us */
+
+.about-us {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.full-bleed-light {
+    box-shadow: 0 0 0 100vmax var(--section-light);
+    clip-path: inset(0 -100vmax);
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img {
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.about-col h1 {
+    padding-top: 0;
+}
+
+.about-col p {
+    padding: 15px 0 25px;
+}
+
+.about-us .row {
+    margin-top: 0;
+}
+
+.red-btn {
+    border: 1px solid var(--common-red);
+    background: transparent;
+    color: var(--common-red);
+    margin-top: 10px;
+}
+
+.red-btn:hover {
+    color: #fff;
+}
+
+/* ---- Curriculum ---- */
+
+.curriculum {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--section-dark);
+}
+
+.full-bleed-dark {
+    box-shadow: 0 0 0 100vmax var(--section-dark);
+    clip-path: inset(0 -100vmax);
+}
+
+.curriculum-col {
+    flex-basis: 48%;
+    padding: 0 0;
+}
+
+.curriculum-col p {
+    color: var(--text-color-light);
+}
+
+.curriculum h1 {
+    color: var(--text-color-light);
+}
+
+.curriculum p {
+    padding: 8px 0;
+}
+
+.curriculum .row {
+    margin-top: 0;
+}
+
+/* ---- Room & Board ---- */
+
+/* ---- Our Students ---- */
+
+.students-col {
+    flex-basis: 28%;
+    padding: 30px 30px;
+    margin-top: 20px;
+    background-color: var(--section-dark);
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: box-shadow 2s;
+}
+
+.students-col:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.students-col p {
+    padding: 8px 0;
+    color: var(--text-color-light);
+}
+
+.students-col h1 {
+    color: var(--text-color-light);
+}
