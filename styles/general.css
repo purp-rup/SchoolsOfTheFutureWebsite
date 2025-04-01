@@ -12,6 +12,45 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24;
+    padding: 0;
+    transition: 0.3s ease;
+}
+
+#btnScrollToTop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: var(--common-red);
+    color: white;
+    cursor: pointer;
+    border: 1px solid transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: 0.3s ease;
+    z-index: 2;
+}
+
+#btnScrollToTop:hover {
+    border: 1px solid var(--common-red);
+    background: white;
+
+    .material-symbols-outlined {
+        color: var(--common-red);
+    }
+}
+
 .header {
     min-height: 100dvh;
     width: 100%;

@@ -6,10 +6,14 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_up" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
   </head>
   <body>
+    <button id="btnScrollToTop">
+      <span class="material-symbols-outlined">keyboard_arrow_up</span>
+    </button>
     <section class="header">
       <nav>
         <a href="index.html">
@@ -22,7 +26,7 @@
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="funding.html">FUNDING</a></li>
             <li><a href="philosophy.html">PHILOSOPHY</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="wellnesscenter.html">WELLNESS CENTER</a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -30,13 +34,13 @@
 
       <div class="text-box">
         <h1>Philadelphia Community Free School</h1>
-        <p>Blah Blah Blah Blah BlahBlah<br>BlahBlahBlahBlahBlahBlahBlahBlahBlah</p>
-        <a href="" class="hero-btn">Visit Us to Know More</a>
+        <p>Where Freedom Meets Excellence</p>
+        <a class="hero-btn" onclick="document.getElementById('courses').scrollIntoView();">Learn More</a>
       </div>
     </section>
 
     <!--- Course --->
-    <section class="course">
+    <section class="course" id="courses">
       <h1>Courses We Offer</h1>
       <p>lorem impshfjs aslkdfjsd jfskdj sfd dkjfdfj kdfkd jf d</p>
 
@@ -142,8 +146,8 @@
 
     <!--- Call to Action --->
     <section class="cta">
-      <h1>Enroll in Our Various Online Courses<br>Anywhere in The World</h1>
-      <a href="" class="hero-btn">CONTACT US</a>
+      <h1>Learn more about us!</h1>
+      <a href="about.html" class="hero-btn">ABOUT US</a>
     </section>
 
     <!--- Footer --->
@@ -172,6 +176,15 @@
       {
           navLinks.style.right = "-200px";
       }
+    </script>
+
+    <!-------- JavaScript for to-top button --------->
+    <script>
+      const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+      btnScrollToTop.addEventListener("click", function () {
+         window.scrollTo(0, 0);
+      });
     </script>
   </body>
 </html>

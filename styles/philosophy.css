@@ -19,12 +19,53 @@ html {
     background-color: var(--section-light);
 }
 
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/philosophy_banner.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+/* Intro Section */
+
 .philosophy-intro {
     width: 80%;
-    margin: 80px auto;
+    margin: 80px auto 0px;
     text-align: center;
 }
 
 .philosophy-intro p {
     font-size: 18px;
+}
+
+.horizontal-line {
+    width: 80%;
+    margin: 30px auto;
+    height: 2px;
+    background-color: var(--section-dark);
+}
+
+/* Body Section */
+
+.philosophy-body {
+    width: 80%;
+    margin: auto;
+}
+
+.philosophy-body p {
+    font-size: 18px;
+}
+
+.philosophy-body .row {
+    margin-top: 0;
+}
+
+.philosophy-body-col {
+    flex-basis: 49%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
 }
