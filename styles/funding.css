@@ -1,0 +1,17 @@
+/* Funding */
+:root {
+    --common-red: #f44336;
+    --text-color: #686868;
+    --section-dark: #30475E;
+    --section-light: #fafafa;
+    --text-color-light: #e3e3e3;
+}
+
+p {
+    font-size: 16px;
+    line-height: 2;
+}
+
+html {
+    background-color: var(--section-light);
+}

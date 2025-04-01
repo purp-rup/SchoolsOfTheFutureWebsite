@@ -1,0 +1,30 @@
+/* Philosophy */
+:root {
+    --common-red: #f44336;
+    --text-color: #686868;
+    --section-dark: #30475E;
+    --section-light: #fafafa;
+    --text-color-light: #e3e3e3;
+}
+
+p {
+    font-size: 16px;
+    line-height: 2;
+    color: var(--text-color)
+}
+
+h1 {}
+
+html {
+    background-color: var(--section-light);
+}
+
+.philosophy-intro {
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.philosophy-intro p {
+    font-size: 18px;
+}
