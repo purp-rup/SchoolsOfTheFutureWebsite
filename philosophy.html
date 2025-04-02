@@ -33,7 +33,7 @@
       </div>
       <i class="fa fa-bars" onclick="openSidebar()"></i>
     </nav>
-    <div id="#overlay"></div>
+    <div id="overlay" onclick="closeSidebar()"></div>
     <h1>PCFS Philosophy</h1>
   </section>
 
@@ -122,15 +122,18 @@
   <!-------- JavaScript for Toggle Menu --------->
   <script>
       const navLinks = document.getElementById('navLinks');
+      const overlay = document.getElementById('overlay');
 
       function openSidebar()
       {
           navLinks.classList.add('show');
+          overlay.style.display = "block";
       }
 
       function closeSidebar()
       {
           navLinks.classList.remove('show');
+          overlay.style.display = "none";
       }
   </script>
 

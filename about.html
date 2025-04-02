@@ -32,7 +32,7 @@
         </div>
         <i class="fa fa-bars" onclick="openSidebar()"></i>
       </nav>
-      <div id="#overlay"></div>
+      <div id="overlay" onclick="closeSidebar()"></div>
       <h1>About Us</h1>
     </section>
 
@@ -40,7 +40,7 @@
     <section class="about-us">
       <div class="row">
         <div class="about-col">
-          <h1>We are the blah blah</h1>
+          <h1>The Future of Schooling</h1>
           <p>Born from the ashes of a broken education system, the Philadelphia Community Free
             School is a revolutionary rethinking of what education can look like. We are
             a K–8 school dedicated to diversity, equity, and well-being—built for students
@@ -99,7 +99,7 @@
             skills early in their time at PCFS, play kitchens, building blocks, and markets
             transition into real world tools we equip the students with by the end of their
             time here.</p>
-          <h3>Optional Concentrations/Extracurriculars</h3>
+          <h3>Optional Concentrations <br>and Extracurriculars</h3>
           <p>Older students have the opportunity to gain experience in their specialized areas
             of interest through internal or external community based clubs. The students have
             the ability to create these club opportunities by utilizing volunteers from the
@@ -271,15 +271,18 @@
     <!-------- JavaScript for Toggle Menu --------->
     <script>
         const navLinks = document.getElementById('navLinks');
+        const overlay = document.getElementById('overlay');
 
         function openSidebar()
         {
             navLinks.classList.add('show');
+            overlay.style.display = "block";
         }
 
         function closeSidebar()
         {
             navLinks.classList.remove('show');
+            overlay.style.display = "none";
         }
     </script>
 

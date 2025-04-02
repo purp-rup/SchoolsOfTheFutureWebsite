@@ -137,7 +137,7 @@ html {
 /* ---- Our Students ---- */
 
 .students-col {
-    flex-basis: 28%;
+    flex-basis: 26%;
     padding: 30px 30px;
     margin-top: 20px;
     background-color: var(--section-dark);
