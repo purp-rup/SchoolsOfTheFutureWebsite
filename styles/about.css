@@ -181,7 +181,7 @@ html {
     width: 80%;
     margin: auto;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     background-color: var(--section-dark);
 }
 
@@ -195,9 +195,25 @@ html {
 }
 
 .community p {
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 .community h1 {
+    color: var(--text-color-light);
+}
+
+.community h3 {
+    font-weight: 600;
+    font-size: 30px;
+    padding: 0;
+    text-align: left;
+}
+
+.community-bottom {
+    padding-top: 10px;
+}
+
+.community-bottom p {
+    text-align: center;
     color: var(--text-color-light);
 }
