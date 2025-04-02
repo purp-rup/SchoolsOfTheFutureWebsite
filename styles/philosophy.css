@@ -69,3 +69,7 @@ html {
     margin-bottom: 5%;
     text-align: left;
 }
+
+.philosophy-body-col ul {
+    color: var(--text-color);
+}

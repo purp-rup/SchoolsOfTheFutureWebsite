@@ -26,3 +26,25 @@ html {
     text-align: center;
     color: #fff;
 }
+
+.funding-body-col {
+    flex-basis: 49%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.funding-row {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background: var(--section-dark);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.funding-row p {
+    color: var(--text-color-light)
+}

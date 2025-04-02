@@ -52,6 +52,15 @@ html {
     }
 }
 
+.author-text {
+    color: var(--text-color-light);
+    opacity: 0.8;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
 .header {
     min-height: 100dvh;
     width: 100%;
