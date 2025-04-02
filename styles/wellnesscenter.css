@@ -1,4 +1,4 @@
-/* Funding */
+/* Wellness Center */
 :root {
     --common-red: #f44336;
     --text-color: #686868;
@@ -8,7 +8,7 @@
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2;
     color: var(--text-color);
 }
@@ -25,4 +25,19 @@ html {
     background-size: cover;
     text-align: center;
     color: #fff;
+}
+
+.wellness-body-col {
+    flex-basis: 49%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    background: var(--section-dark);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin-top: 15px;
+}
+
+.wellness-body-col p {
+    padding: 30px;
+    color: var(--text-color-light);
 }
