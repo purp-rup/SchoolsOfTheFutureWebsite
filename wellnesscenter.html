@@ -21,10 +21,10 @@
   <section class="sub-header">
     <nav>
       <a href="index.html">
-        <img src="images/pcfs_logo2.png">
+        <img src="images/pcfs_logo2.png" alt="logo">
       </a>
       <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <i class="fa fa-times" onclick="closeSidebar()"></i>
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
@@ -33,8 +33,10 @@
           <li><a href="wellnesscenter.html">WELLNESS CENTER</a></li>
         </ul>
       </div>
-      <i class="fa fa-bars" onclick="showMenu()"></i>
+      <i class="fa fa-bars" onclick="openSidebar()"></i>
     </nav>
+    <div id="#overlay"></div>
+
     <h1>Wellness Center</h1>
   </section>
 
@@ -86,16 +88,16 @@
 
   <!-------- JavaScript for Toggle Menu --------->
   <script>
-      var navLinks = document.getElementById("navLinks");
+      const navLinks = document.getElementById('navLinks');
 
-      function showMenu()
+      function openSidebar()
       {
-          navLinks.style.right = "0";
+          navLinks.classList.add('show');
       }
 
-      function hideMenu()
+      function closeSidebar()
       {
-          navLinks.style.right = "-200px";
+          navLinks.classList.remove('show');
       }
   </script>
 

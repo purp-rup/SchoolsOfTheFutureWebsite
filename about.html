@@ -18,7 +18,7 @@
     <section class="sub-header">
       <nav>
         <a href="index.html">
-          <img src="images/pcfs_logo2.png">
+          <img src="images/pcfs_logo2.png" alt="logo">
         </a>
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -181,26 +181,27 @@
       <div class="row">
         <div class="students-col">
           <h1>Our Students</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <p>Our children are at the heart of the Philadelphia
+            Community Free School. We welcome children of all backgrounds,
+            including children navigating foster care and displacement. Each
+            student is also heard, seen, and loved—not just academically,
+            but for who they are.</p>
         </div>
         <div class="students-col">
           <h1>Diversity</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <p>Our student body reflects the rich, diverse communities of Philadelphia,
+          with every child having their own story, identity, and way of learning;
+          we are committed to serving all of those.</p>
         </div>
         <div class="students-col">
-          <h1>Room & Board at PCFS</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <h1>A Voice</h1>
+          <p>We give our students a voice in the direction of their educational
+            journey and always challenge them to push against the
+            world they live in. When students are trusted, supported, and understood,
+            they thrive.</p>
         </div>
       </div>
+      <p><span class="author-text-dark">Andrew Miraglia</span></p>
     </section>
 
     <!--- PCFS Community --->
@@ -268,17 +269,17 @@
 
     <!-------- JavaScript for Toggle Menu --------->
     <script>
-      var navLinks = document.getElementById("navLinks");
+        const navLinks = document.getElementById('navLinks');
 
-      function showMenu()
-      {
-          navLinks.style.right = "0";
-      }
+        function openSidebar()
+        {
+            navLinks.classList.add('show');
+        }
 
-      function hideMenu()
-      {
-          navLinks.style.right = "-200px";
-      }
+        function closeSidebar()
+        {
+            navLinks.classList.remove('show');
+        }
     </script>
 
     <!-------- JavaScript for to-top button --------->

@@ -20,7 +20,7 @@
   <section class="sub-header">
     <nav>
       <a href="index.html">
-        <img src="images/pcfs_logo2.png">
+        <img src="images/pcfs_logo2.png" alt="logo">
       </a>
       <div class="nav-links" id="navLinks">
         <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -111,16 +111,16 @@
 
   <!-------- JavaScript for Toggle Menu --------->
   <script>
-      var navLinks = document.getElementById("navLinks");
+      const navLinks = document.getElementById('navLinks');
 
-      function showMenu()
+      function openSidebar()
       {
-          navLinks.style.right = "0";
+          navLinks.classList.add('show');
       }
 
-      function hideMenu()
+      function closeSidebar()
       {
-          navLinks.style.right = "-200px";
+          navLinks.classList.remove('show');
       }
   </script>
 
